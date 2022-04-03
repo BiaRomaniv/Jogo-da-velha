@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da velha</title>
+</head>
+
+<body>
+    <h1>Jogo da velha</h1>
+    <div class="tabuleiro">
+        <div>
+            <div id="1" class="square" onclick="play(this.id)">-</div><!-- this.id me permite pegar esse elemento pelo id, sem fazer query selector ou get -->
+            <div id="2" class="square" onclick="play(this.id)">-</div>
+            <div id="3" class="square" onclick="play(this.id)">-</div>
+        </div>
+        <div>
+            <div id="4" class="square" onclick="play(this.id)">-</div>
+            <div id="5" class="square" onclick="play(this.id)">-</div>
+            <div id="6" class="square" onclick="play(this.id)">-</div>
+        </div>
+        <div>
+            <div id="7" class="square" onclick="play(this.id)">-</div>
+            <div id="8" class="square" onclick="play(this.id)">-</div>
+            <div id="9" class="square" onclick="play(this.id)">-</div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="jogador">
+            <label>
+                Jogador:
+            </label>
+            <label id="jogadorSelecionado">
+
+            </label>
+        </div>
+
+        <div class="vencedor">
+            <label>
+                Vencedor:
+            </label>
+            <label id="vencedorSelecionado">
+
+            </label>
+        </div>
+    </div>
+
+    <div>
+        <button onclick="verificaGanhador()">
+            Reiniciar
+        </button>
+    </div>
+</body>
+<script src="/script.js"></script>
+</html>
