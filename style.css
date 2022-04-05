@@ -29,7 +29,7 @@ h1{
     
 }
 
-.square:hover {
+.tabuleiro .square:hover {
     background-color: aqua;
     color: aqua;
 }
